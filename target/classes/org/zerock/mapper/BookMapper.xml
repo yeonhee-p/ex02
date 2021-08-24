@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.BookMapper">
+
+<insert id="insert">
+    insert into tbl_book(title, writer, category, price) 
+    values(#{title},#{writer},#{category},#{price})
+</insert>
+
+<select id="detail" resultType="org.zerock.domain.BookVO">
+	    select * from tbl_book where book_id=#{book_id}
+</select>
+
+<update id="update">
+	update tbl_book 
+	set title=#{title}, writer=#{writer},category=#{category},price=#{price} where book_id=#{book_id}
+</update>
+</mapper>
