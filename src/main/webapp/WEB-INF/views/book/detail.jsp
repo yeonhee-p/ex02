@@ -12,7 +12,9 @@
 </head>
 <body>
   <h1>책 상세</h1>
-	<p>제목 : <input type="text" name="title" value="${book.title }"> </p>
+	<!-- <p>제목 : <input type="text" name="title" value="${book.title }"> </p> -->
+	 <img src="${book.title }" alt="" width="200px" height="300px">
+	
 	<p>저자 : <input type="text" name="writer" value="${book.writer }"> </p>
 	<p>카테고리 : <input type="text" name="category" value="${book.category }"></p>
 	<p>가격  : <input type="text" name="price" value="${book.price }"></p>

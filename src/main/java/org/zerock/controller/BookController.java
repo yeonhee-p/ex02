@@ -25,12 +25,12 @@ public class BookController {
 		logger.info("BookController create get");
 	}
 	@PostMapping(value="create")
-	public String createPost(BookVO vo) {	
+	public void createPost(BookVO vo) {	
 		logger.info("BookController createPost");
 		bookService.create(vo);
-		return "redirect:/book/create";
+		//return "redirect:/book/create";
 	}
-	@GetMapping("detail")
+	/*@GetMapping("detail")
 	public void detail(@RequestParam("book_id") int book_id, Model model) {
 		logger.info("BookController detail");
 		model.addAttribute("book",bookService.detail(book_id));
@@ -41,5 +41,5 @@ public class BookController {
 		bookService.update(vo);
 		rttr.addAttribute("bookId", vo.getBook_id());
 		return "redirect:/book/create";
-	}
+	}*/
 }

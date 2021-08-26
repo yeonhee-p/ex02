@@ -13,7 +13,7 @@
     <div id="wrap">
         <header class="header">
             <div class="headerIn">
-                <h1 class="logo"><a href="#"><img src="../resources/img/logo038db0.png" alt="읽어보다"></a></h1>
+                <h1 class="logo"><a href="#"><img src="../resources/img/logo.png" alt="읽어보다"></a></h1>
                 <nav class="gnb">
                     <ul class="gnb_menu">
                         <li><a href="#">카테고리</a></li>
@@ -25,7 +25,7 @@
         
                 <div class="utils">
                     <ul class="ut">
-                        <li><a href="#">로그인</a></li>
+                        <li><a href="http://localhost:8080/member/login">로그인</a></li>
                         <li><a href="#">주문배송</a></li>
                         <li><a href="#">고객센터</a></li>
                     </ul> <!--.ut-->
@@ -146,15 +146,13 @@
                         <li>
                             <a href="">
                                 <img src="../resources/img/best_1.jpg" alt="" width="200px" height="300px">
-                                
+	                            <p>
+	                            	<strong>미드나잇 라이브러리</strong>
+	                            	<br>매트 헤이그
+	                            	<br><br>
+	                            	<b> </b>
+	                            </p>
                             </a> 
-                            <p>
-                            	<strong>미드나잇 라이브러리</strong>
-                            	<br>매트 헤이그
-                            	<br><br>
-                            	<b>밤 12시, 죽기 바로 전에만 열리는 마법의 도서관에서<br>
-                            	인생의 두 번째 기회를 드립니다</b>
-                            </p>
                         </li>
                         <li>
                             <a href="">

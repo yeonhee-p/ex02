@@ -17,10 +17,10 @@ public class BookServiceImpl implements BookService {
 		bmapper.insert(vo);
 	}
 	
-	public BookVO detail(int book_id) {
+	/*public BookVO detail(int book_id) {
 		return bmapper.detail(book_id);
 	}
 	public BookVO update(BookVO book) {
 		return bmapper.update(book);
-	}
+	}*/
 }

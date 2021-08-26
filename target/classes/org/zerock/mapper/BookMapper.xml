@@ -5,12 +5,12 @@
 <mapper namespace="org.zerock.mapper.BookMapper">
 
 <insert id="insert">
-    insert into tbl_book(title, writer, category, price) 
-    values(#{title},#{writer},#{category},#{price})
+    insert into tbl_book(book_title, book_writer, book_pub, book_pubdate,book_img,book_info,book_cat,book_price) 
+    values(#{book_title},#{book_writer},#{book_pub},#{book_pubdate},#{book_img},#{book_info},#{book_cat},#{book_price})
 </insert>
 
 <select id="detail" resultType="org.zerock.domain.BookVO">
-	    select * from tbl_book where book_id=#{book_id}
+	    select * from tbl_book where book_id=2
 </select>
 
 <update id="update">
